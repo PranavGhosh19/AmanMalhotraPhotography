@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Instagram, Linkedin, Figma } from "lucide-react";
@@ -24,7 +23,6 @@ export function Footer() {
               <li><a href="#about" className="hover:text-secondary transition-colors">About</a></li>
               <li><a href="#portfolio" className="hover:text-secondary transition-colors">Portfolio</a></li>
               <li><a href="#services" className="hover:text-secondary transition-colors">Services</a></li>
-              <li><a href="#ai-tool" className="hover:text-secondary transition-colors">AI Assistant</a></li>
             </ul>
           </div>
 

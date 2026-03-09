@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -23,7 +22,6 @@ export function Navbar() {
     { name: "About", href: "#about" },
     { name: "Portfolio", href: "#portfolio" },
     { name: "Services", href: "#services" },
-    { name: "AI Tool", href: "#ai-tool" },
   ];
 
   return (
