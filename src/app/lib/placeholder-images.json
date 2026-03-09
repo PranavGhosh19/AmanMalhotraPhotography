@@ -1,0 +1,53 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Professional brand photography aesthetic",
+      "imageUrl": "https://picsum.photos/seed/photog1/1920/1080",
+      "imageHint": "professional photography studio"
+    },
+    {
+      "id": "portrait-aman",
+      "description": "Photographer portrait",
+      "imageUrl": "https://picsum.photos/seed/photog2/800/1200",
+      "imageHint": "photographer portrait professional"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "Brand photography project 1",
+      "imageUrl": "https://picsum.photos/seed/brand1/800/1000",
+      "imageHint": "minimalist product photography"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Brand photography project 2",
+      "imageUrl": "https://picsum.photos/seed/brand2/800/1000",
+      "imageHint": "vibrant lifestyle photography"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Portrait project 1",
+      "imageUrl": "https://picsum.photos/seed/port1/800/1000",
+      "imageHint": "moody portrait photography"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "Portrait project 2",
+      "imageUrl": "https://picsum.photos/seed/port2/800/1000",
+      "imageHint": "corporate headshot professional"
+    },
+    {
+      "id": "portfolio-5",
+      "description": "Event coverage 1",
+      "imageUrl": "https://picsum.photos/seed/event1/800/1000",
+      "imageHint": "dynamic event coverage"
+    },
+    {
+      "id": "portfolio-6",
+      "description": "Event coverage 2",
+      "imageUrl": "https://picsum.photos/seed/event2/800/1000",
+      "imageHint": "luxury event photography"
+    }
+  ]
+}
