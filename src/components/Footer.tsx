@@ -1,6 +1,6 @@
 "use client";
 
-import { Instagram, Linkedin, Figma } from "lucide-react";
+import { Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -29,14 +29,24 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="font-headline text-sm font-bold tracking-[0.3em] uppercase text-secondary">Connect</h4>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
-                <Figma className="w-5 h-5" />
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                  <path d="M9 12h2a2.1 2.1 0 1 1 0 4H9V8h2a2 2 0 1 1 0 4H9"/>
+                  <path d="M14 13h7"/>
+                  <path d="M14 12v-1.5a2.5 2.5 0 0 1 5 0V12"/>
+                  <path d="M21 12v3.5a2.5 2.5 0 0 1-5 0V12"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/919821921465" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-secondary hover:text-background transition-all duration-300">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
               </a>
             </div>
             <p className="text-xs text-muted-foreground tracking-widest pt-2">
