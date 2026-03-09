@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -60,11 +59,11 @@ export function AICaptionTool() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/2 space-y-8">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 border border-secondary/20 text-secondary text-[10px] font-bold tracking-widest uppercase rounded-full">
+              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] font-bold tracking-widest uppercase rounded-full">
                 <Sparkles className="w-3 h-3" /> Photographer's AI Assistant
               </div>
               <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight">
-                AI Social Media <span className="text-secondary italic">Creator</span>
+                AI Social Media <span className="text-primary italic">Creator</span>
               </h2>
               <p className="text-muted-foreground text-lg font-light leading-relaxed">
                 Generate high-engagement captions and optimized hashtags for your latest shoot in seconds. 
@@ -76,27 +75,27 @@ export function AICaptionTool() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label className="text-xs uppercase tracking-widest text-muted-foreground">Project Type</Label>
-                  <Input name="projectType" required placeholder="e.g. Brand Session" className="bg-card border-white/10 rounded-none" />
+                  <Input name="projectType" required placeholder="e.g. Brand Session" className="bg-card border-white/10 rounded-none h-12" />
                 </div>
                 <div className="space-y-2">
                   <Label className="text-xs uppercase tracking-widest text-muted-foreground">Style/Theme</Label>
-                  <Input name="theme" required placeholder="e.g. Minimalist/Dark" className="bg-card border-white/10 rounded-none" />
+                  <Input name="theme" required placeholder="e.g. Minimalist/Dark" className="bg-card border-white/10 rounded-none h-12" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label className="text-xs uppercase tracking-widest text-muted-foreground">Key Aspects</Label>
-                <Textarea name="keyAspects" required placeholder="e.g. Focus on natural light, dynamic movement" className="bg-card border-white/10 rounded-none min-h-[80px]" />
+                <Textarea name="keyAspects" required placeholder="e.g. Focus on natural light, dynamic movement" className="bg-card border-white/10 rounded-none min-h-[100px]" />
               </div>
               <div className="space-y-2">
                 <Label className="text-xs uppercase tracking-widest text-muted-foreground">Tone</Label>
-                <select name="tone" className="w-full bg-card border border-white/10 p-3 text-sm rounded-none focus:ring-2 focus:ring-primary">
+                <select name="tone" className="w-full bg-card border border-white/10 p-3 text-sm rounded-none focus:ring-1 focus:ring-primary appearance-none h-12">
                   <option value="professional">Professional</option>
                   <option value="inspirational">Inspirational</option>
                   <option value="playful">Playful</option>
                   <option value="luxurious">Luxurious</option>
                 </select>
               </div>
-              <Button type="submit" disabled={isLoading} className="w-full h-14 bg-secondary text-background hover:bg-secondary/90 rounded-none tracking-[0.2em] uppercase font-bold">
+              <Button type="submit" disabled={isLoading} className="w-full h-14 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none tracking-[0.2em] uppercase font-bold transition-all duration-300">
                 {isLoading ? <Loader2 className="w-5 h-5 animate-spin mr-2" /> : <Sparkles className="w-5 h-5 mr-2" />}
                 Generate Content
               </Button>
@@ -104,11 +103,11 @@ export function AICaptionTool() {
           </div>
 
           <div className="lg:w-1/2 w-full h-full min-h-[400px]">
-            <div className="h-full border border-dashed border-white/10 rounded-none flex flex-col items-center justify-center p-8 text-center bg-background/30 relative">
+            <div className="h-full border border-dashed border-white/10 rounded-none flex flex-col items-center justify-center p-8 text-center bg-background/30 relative min-h-[500px]">
               {!result && !isLoading && (
                 <div className="space-y-4 opacity-30">
-                  <div className="w-16 h-16 border-2 border-muted rounded-full flex items-center justify-center mx-auto">
-                    <Sparkles className="w-8 h-8" />
+                  <div className="w-16 h-16 border border-primary rounded-full flex items-center justify-center mx-auto">
+                    <Sparkles className="w-8 h-8 text-primary" />
                   </div>
                   <p className="font-headline tracking-widest uppercase text-sm">Generated content will appear here</p>
                 </div>
@@ -116,7 +115,7 @@ export function AICaptionTool() {
 
               {isLoading && (
                 <div className="space-y-4">
-                  <Loader2 className="w-12 h-12 animate-spin text-secondary mx-auto" />
+                  <Loader2 className="w-12 h-12 animate-spin text-primary mx-auto" />
                   <p className="font-headline tracking-widest uppercase text-sm animate-pulse">Crafting your story...</p>
                 </div>
               )}
@@ -124,17 +123,17 @@ export function AICaptionTool() {
               {result && (
                 <div className="w-full text-left space-y-6 animate-in fade-in slide-in-from-bottom-4">
                   <div className="flex justify-between items-center border-b border-white/10 pb-4">
-                    <h3 className="font-headline font-bold tracking-widest uppercase text-secondary">Your Caption</h3>
-                    <Button variant="ghost" size="sm" onClick={copyToClipboard} className="text-xs tracking-widest">
+                    <h3 className="font-headline font-bold tracking-widest uppercase text-primary">Your Caption</h3>
+                    <Button variant="ghost" size="sm" onClick={copyToClipboard} className="text-xs tracking-widest hover:text-primary">
                       {copied ? <Check className="w-3 h-3 mr-2" /> : <Copy className="w-3 h-3 mr-2" />}
                       {copied ? "COPIED" : "COPY ALL"}
                     </Button>
                   </div>
                   <div className="bg-card p-6 border border-white/5 shadow-inner">
-                    <p className="text-sm leading-relaxed whitespace-pre-wrap">{result.caption}</p>
-                    <div className="mt-6 flex flex-wrap gap-2">
+                    <p className="text-sm leading-relaxed whitespace-pre-wrap font-light">{result.caption}</p>
+                    <div className="mt-8 pt-6 border-t border-white/5 flex flex-wrap gap-3">
                       {result.hashtags.map((tag, i) => (
-                        <span key={i} className="text-[10px] text-secondary/70 font-mono">
+                        <span key={i} className="text-[10px] text-primary/80 font-mono tracking-tight bg-primary/5 px-2 py-1">
                           #{tag.replace(/^#/, '')}
                         </span>
                       ))}
