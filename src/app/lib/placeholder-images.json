@@ -2,6 +2,18 @@
 {
   "placeholderImages": [
     {
+      "id": "hero-before",
+      "description": "Raw unedited brand photography",
+      "imageUrl": "https://picsum.photos/seed/before1/800/1000",
+      "imageHint": "raw photography unedited"
+    },
+    {
+      "id": "hero-after",
+      "description": "Professional edited brand photography",
+      "imageUrl": "https://picsum.photos/seed/after1/800/1000",
+      "imageHint": "edited professional photography"
+    },
+    {
       "id": "hero-bg",
       "description": "Professional brand photography aesthetic",
       "imageUrl": "https://picsum.photos/seed/photog1/1920/1080",

@@ -4,13 +4,14 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
 import { cn } from "@/lib/utils";
+import { BeforeAfterSlider } from "./BeforeAfterSlider";
 
 export function Hero() {
   const [scrolled, setScrolled] = useState(false);
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
+  const beforeImage = PlaceHolderImages.find(img => img.id === 'hero-before');
+  const afterImage = PlaceHolderImages.find(img => img.id === 'hero-after');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,16 +54,9 @@ export function Hero() {
 
         <div className="relative aspect-[3/4] lg:aspect-square w-full max-w-2xl mx-auto lg:mx-0 animate-fade-up delay-200">
           <div className="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10"></div>
-          <div className="relative h-full w-full overflow-hidden shadow-2xl border border-white/5 rounded-[4px]">
-            <Image
-              src={heroImage?.imageUrl || ""}
-              alt={heroImage?.description || "Photography Studio"}
-              fill
-              className="object-cover transition-transform duration-1000 hover:scale-105"
-              priority
-              data-ai-hint="professional photography"
-            />
-          </div>
+          {beforeImage && afterImage && (
+            <BeforeAfterSlider before={beforeImage} after={afterImage} />
+          )}
         </div>
       </div>
 
