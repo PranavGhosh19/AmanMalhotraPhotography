@@ -51,10 +51,6 @@ export function Hero() {
               data-ai-hint="professional photography"
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 bg-card p-6 border border-white/5 hidden md:block rounded-[2px]">
-            <p className="font-headline text-xl font-bold tracking-widest uppercase text-primary">Est. 2018</p>
-            <p className="text-xs text-muted-foreground tracking-widest uppercase">Premium Visuals</p>
-          </div>
         </div>
       </div>
 
