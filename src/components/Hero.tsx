@@ -25,7 +25,7 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center w-full">
         <div className="z-10 space-y-8 text-center lg:text-left animate-fade-up">
           <div className="space-y-4">
-            <h1 className="font-headline text-[clamp(3.5rem,8vw,7rem)] font-medium leading-[1.1] tracking-tight">
+            <h1 className="font-headline text-[clamp(2.5rem,6vw,5rem)] font-medium leading-[1.1] tracking-tight">
               Elevate Your <br />
               Visual <span className="text-primary italic">Identity</span>.
             </h1>
