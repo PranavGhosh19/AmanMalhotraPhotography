@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Home, LayoutGrid, Camera, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { BookingModal } from "./BookingModal";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,6 +27,8 @@ export function Navbar() {
     { name: "Portfolio", href: "#portfolio", icon: <LayoutGrid className="w-5 h-5" /> },
     { name: "Services", href: "#services", icon: <Camera className="w-5 h-5" /> },
   ];
+
+  const whatsappUrl = "https://wa.me/919910333813";
 
   return (
     <>
@@ -54,7 +55,9 @@ export function Navbar() {
                 {link.name}
               </a>
             ))}
-            <BookingModal trigger={<Button className="bg-transparent hover:bg-primary border border-primary text-primary hover:text-background rounded-[2px] px-8 h-12 tracking-[0.1em] uppercase text-[0.8rem] font-medium transition-all duration-300">Book a Session</Button>} />
+            <Button asChild className="bg-transparent hover:bg-primary border border-primary text-primary hover:text-background rounded-[2px] px-8 h-12 tracking-[0.1em] uppercase text-[0.8rem] font-medium transition-all duration-300">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">Book a Session</a>
+            </Button>
           </div>
         </div>
       </nav>
@@ -72,12 +75,15 @@ export function Navbar() {
               <span className="text-[10px] uppercase tracking-widest font-medium">{link.name}</span>
             </a>
           ))}
-          <BookingModal trigger={
-            <button className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
-              <Calendar className="w-5 h-5" />
-              <span className="text-[10px] uppercase tracking-widest font-medium">Book</span>
-            </button>
-          } />
+          <a 
+            href={whatsappUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors"
+          >
+            <Calendar className="w-5 h-5" />
+            <span className="text-[10px] uppercase tracking-widest font-medium">Book</span>
+          </a>
         </div>
       </div>
     </>
