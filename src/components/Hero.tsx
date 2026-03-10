@@ -1,12 +1,24 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
+import { cn } from "@/lib/utils";
 
 export function Hero() {
+  const [scrolled, setScrolled] = useState(false);
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Hide the indicator after 50px of scrolling
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden max-w-[1400px] mx-auto px-6 md:px-12">
@@ -54,7 +66,10 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-muted-foreground opacity-50 animate-bounce">
+      <div className={cn(
+        "absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-muted-foreground transition-all duration-700 ease-in-out animate-bounce",
+        scrolled ? "opacity-0 translate-y-8 pointer-events-none" : "opacity-50 translate-y-0"
+      )}>
         <span className="text-[0.7rem] uppercase tracking-[0.2em]">Scroll</span>
         <div className="mouse w-6 h-9 border border-muted-foreground rounded-[12px] relative">
           <div className="wheel w-0.5 h-1.5 bg-muted-foreground rounded-full absolute top-1.5 left-1/2 -translate-x-1/2 animate-[scroll_1.5s_infinite]"></div>
