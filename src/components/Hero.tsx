@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -29,7 +28,7 @@ export function Hero() {
             <p className="text-muted-foreground text-[0.9rem] uppercase tracking-[0.2em] font-medium opacity-0 animate-fade-up [animation-fill-mode:forwards]">
               Aman Malhotra Photography
             </p>
-            <h1 className="font-headline text-[clamp(2rem,5vw,4rem)] font-medium leading-[1.2] tracking-tight">
+            <h1 className="font-headline text-[clamp(2rem, 5vw, 4rem)] font-medium leading-[1.2] tracking-tight">
               Elevate Your <br />
               Visual <span className="text-primary italic">Identity</span>.
             </h1>
@@ -45,7 +44,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="outline" asChild className="h-14 px-8 rounded-[2px] border-white/10 text-foreground hover:border-foreground text-[0.9rem] tracking-[0.1em] uppercase font-medium btn-transition">
-              <a href="https://wa.me/919821921465" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/919910333813" target="_blank" rel="noopener noreferrer">
                 Let's Talk
               </a>
             </Button>
@@ -55,7 +54,9 @@ export function Hero() {
         <div className="relative aspect-[3/4] lg:aspect-square w-full max-w-2xl mx-auto lg:mx-0 animate-fade-up delay-200">
           <div className="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10"></div>
           {beforeImage && afterImage && (
-            <BeforeAfterSlider before={beforeImage} after={afterImage} />
+            <div className="relative w-full h-full overflow-hidden rounded-[2px]">
+              <BeforeAfterSlider before={beforeImage} after={afterImage} />
+            </div>
           )}
         </div>
       </div>
