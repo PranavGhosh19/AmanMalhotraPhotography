@@ -1,5 +1,51 @@
-# Firebase Studio
+# Aman Malhotra Photography - Premium Visual Identity
 
-This is a NextJS starter in Firebase Studio.
+This is a high-end photography portfolio built with Next.js, Tailwind CSS, and Framer Motion.
 
-To get started, take a look at src/app/page.tsx.
+## How to push to GitHub
+
+To push this project to your own GitHub repository, follow these steps in your terminal:
+
+1. **Initialize Git:**
+   ```bash
+   git init
+   ```
+
+2. **Add all files:**
+   ```bash
+   git add .
+   ```
+
+3. **Commit your changes:**
+   ```bash
+   git commit -m "Initial commit: Professional Photography Portfolio"
+   ```
+
+4. **Create a new repository on GitHub.com** (do not initialize it with a README or License).
+
+5. **Link your local repo to GitHub:**
+   (Replace `your-username` and `your-repo-name` with your actual details)
+   ```bash
+   git remote add origin https://github.com/your-username/your-repo-name.git
+   git branch -M main
+   ```
+
+6. **Push the code:**
+   ```bash
+   git push -u origin main
+   ```
+
+## Tech Stack
+
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Components:** [Shadcn UI](https://ui.shadcn.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **AI Integration:** [Genkit](https://firebase.google.com/docs/genkit)
+
+## Project Structure
+
+- `src/app`: Next.js App Router pages and layouts.
+- `src/components`: Reusable UI components.
+- `src/ai`: Genkit flows for AI-powered features.
+- `src/firebase`: Firebase configuration and hooks.
