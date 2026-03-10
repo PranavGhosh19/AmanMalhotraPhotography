@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -13,7 +14,6 @@ export function Hero() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Hide the indicator after 50px of scrolling
       setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
