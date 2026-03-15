@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -70,12 +69,6 @@ export function Hero() {
           <div className="wheel w-0.5 h-1.5 bg-muted-foreground rounded-full absolute top-1.5 left-1/2 -translate-x-1/2 animate-[scroll_1.5s_infinite]"></div>
         </div>
       </div>
-      <style jsx>{`
-        @keyframes scroll {
-          0% { top: 6px; opacity: 1; }
-          100% { top: 18px; opacity: 0; }
-        }
-      `}</style>
     </section>
   );
 }

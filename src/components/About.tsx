@@ -1,18 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { PlaceHolderImages } from "@/app/lib/placeholder-images";
 
 export function About() {
-  const amanImage = PlaceHolderImages.find(img => img.id === 'portrait-aman');
-
   return (
     <section id="about" className="py-32 bg-card max-w-none">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center max-w-[1400px]">
         <div className="relative aspect-[3/4] w-full max-w-lg mx-auto lg:mx-0">
           <div className="absolute inset-0 border border-primary/20 -translate-x-6 translate-y-6 -z-10"></div>
           <Image
-            src={amanImage?.imageUrl || ""}
+            src="/images/p.png"
             alt="Aman Malhotra"
             fill
             className="object-cover shadow-2xl rounded-[4px]"
