@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
-import { PlaceHolderImages } from "@/app/lib/placeholder-images";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 export function Hero() {
@@ -17,9 +16,6 @@ export function Hero() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const beforeImage = PlaceHolderImages.find(img => img.id === 'hero-before')!;
-  const afterImage = PlaceHolderImages.find(img => img.id === 'hero-after')!;
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden max-w-[1400px] mx-auto px-6 md:px-12">
@@ -51,8 +47,14 @@ export function Hero() {
 
         <div className="relative aspect-[3/4] lg:aspect-square w-full max-w-2xl mx-auto lg:mx-0 animate-fade-up delay-200">
           <div className="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10"></div>
-          <div className="relative w-full h-full">
-            <BeforeAfterSlider before={beforeImage} after={afterImage} />
+          <div className="relative w-full h-full overflow-hidden rounded-[2px] border border-white/5 shadow-2xl bg-muted">
+            <Image
+              src="/p.png"
+              alt="Professional Brand Photography"
+              fill
+              className="object-cover transition-transform duration-1000 hover:scale-105"
+              priority
+            />
           </div>
         </div>
       </div>
