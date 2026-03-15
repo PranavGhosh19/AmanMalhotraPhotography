@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -27,7 +28,7 @@
     {
       "id": "portrait-aman",
       "description": "Photographer portrait",
-      "imageUrl": "/images/aman-portrait.jpg",
+      "imageUrl": "/images/p.png",
       "imageHint": "photographer portrait professional"
     },
     {
