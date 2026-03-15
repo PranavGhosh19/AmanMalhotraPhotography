@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const CATEGORIES = ["All", "Brand", "Portrait", "Events"];
 
 const PORTFOLIO_ITEMS = [
-  { id: 1, category: "Brand", image: "portfolio-1", title: "Minimal Elegance", span: "span-8" },
+  { id: 1, category: "Brand", image: "/glamglint/GG263483.jpg.png", title: "Glamglint", span: "span-8" },
   { id: 2, category: "Brand", image: "portfolio-2", title: "Urban Lifestyle", span: "span-4" },
   { id: 3, category: "Portrait", image: "portfolio-3", title: "The Executive", span: "span-4" },
   { id: 4, category: "Portrait", image: "portfolio-4", title: "Natural Soul", span: "span-8" },
@@ -54,7 +54,14 @@ export function Portfolio() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {filteredItems.map((item) => {
-            const imageData = PlaceHolderImages.find(img => img.id === item.image);
+            // Determine the image source: Check if it's a direct path or a placeholder ID
+            const isPath = item.image.startsWith('/');
+            const imageData = isPath ? null : PlaceHolderImages.find(img => img.id === item.image);
+            const imageSrc = isPath ? item.image : (imageData?.imageUrl || null);
+
+            // Skip rendering if no valid image source is found
+            if (!imageSrc) return null;
+
             return (
               <div 
                 key={item.id} 
@@ -65,8 +72,8 @@ export function Portfolio() {
                 )}
               >
                 <Image
-                  src={imageData?.imageUrl || ""}
-                  alt={imageData?.description || "Portfolio item"}
+                  src={imageSrc}
+                  alt={imageData?.description || item.title}
                   fill
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                   data-ai-hint={`${item.category.toLowerCase()} photography`}
