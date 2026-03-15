@@ -44,11 +44,11 @@ export function About() {
 
           <div className="grid grid-cols-2 gap-8 pt-4">
             <div>
-              <p className="font-headline text-4xl font-medium text-primary">8+</p>
+              <p className="font-headline text-4xl font-medium text-primary">5+</p>
               <p className="text-[0.75rem] uppercase tracking-widest text-muted-foreground">Years Experience</p>
             </div>
             <div>
-              <p className="font-headline text-4xl font-medium text-primary">500+</p>
+              <p className="font-headline text-4xl font-medium text-primary">487+</p>
               <p className="text-[0.75rem] uppercase tracking-widest text-muted-foreground">Projects Delivered</p>
             </div>
           </div>
