@@ -1,6 +1,11 @@
-
 {
   "placeholderImages": [
+    {
+      "id": "hero-main",
+      "description": "Custom Hero Image",
+      "imageUrl": "/images/p.png",
+      "imageHint": "professional photography"
+    },
     {
       "id": "hero-before",
       "description": "Raw unedited brand photography",

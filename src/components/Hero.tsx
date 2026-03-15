@@ -1,17 +1,13 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PlaceHolderImages } from "@/app/lib/placeholder-images";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { BeforeAfterSlider } from "./BeforeAfterSlider";
 
 export function Hero() {
   const [scrolled, setScrolled] = useState(false);
-  const beforeImage = PlaceHolderImages.find(img => img.id === 'hero-before');
-  const afterImage = PlaceHolderImages.find(img => img.id === 'hero-after');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +22,7 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center w-full">
         <div className="z-10 space-y-8 text-center lg:text-left animate-fade-up">
           <div className="space-y-4">
-            <h1 className="font-headline text-[clamp(2.5rem,7vw,4.8rem)] font-medium leading-[1.1] tracking-tight">
+            <h1 className="font-headline text-[clamp(3.5rem,10vw,6.5rem)] font-medium leading-[1.05] tracking-tight">
               Elevate Your <br />
               Visual <span className="text-primary italic">Identity</span>.
             </h1>
@@ -51,11 +47,16 @@ export function Hero() {
 
         <div className="relative aspect-[3/4] lg:aspect-square w-full max-w-2xl mx-auto lg:mx-0 animate-fade-up delay-200">
           <div className="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10"></div>
-          {beforeImage && afterImage && (
-            <div className="relative w-full h-full overflow-hidden rounded-[2px]">
-              <BeforeAfterSlider before={beforeImage} after={afterImage} />
-            </div>
-          )}
+          <div className="relative w-full h-full overflow-hidden rounded-[2px] border border-white/5 shadow-2xl bg-muted">
+            <Image
+              src="/images/p.png"
+              alt="Professional Brand Photography"
+              fill
+              className="object-cover transition-transform duration-1000 hover:scale-105"
+              priority
+              data-ai-hint="professional photography"
+            />
+          </div>
         </div>
       </div>
 
