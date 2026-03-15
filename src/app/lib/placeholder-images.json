@@ -4,61 +4,61 @@
     {
       "id": "hero-before",
       "description": "Raw unedited brand photography",
-      "imageUrl": "https://picsum.photos/seed/before1/800/1000",
+      "imageUrl": "/images/hero-before.jpg",
       "imageHint": "raw photography unedited"
     },
     {
       "id": "hero-after",
       "description": "Professional edited brand photography",
-      "imageUrl": "https://picsum.photos/seed/after1/800/1000",
+      "imageUrl": "/images/hero-after.jpg",
       "imageHint": "edited professional photography"
     },
     {
       "id": "hero-bg",
       "description": "Professional brand photography aesthetic",
-      "imageUrl": "https://picsum.photos/seed/photog1/1920/1080",
+      "imageUrl": "/images/hero-bg.jpg",
       "imageHint": "professional photography studio"
     },
     {
       "id": "portrait-aman",
       "description": "Photographer portrait",
-      "imageUrl": "https://picsum.photos/seed/photog2/800/1200",
+      "imageUrl": "/images/aman-portrait.jpg",
       "imageHint": "photographer portrait professional"
     },
     {
       "id": "portfolio-1",
       "description": "Brand photography project 1",
-      "imageUrl": "https://picsum.photos/seed/brand1/800/1000",
+      "imageUrl": "/images/portfolio-1.jpg",
       "imageHint": "minimalist product photography"
     },
     {
       "id": "portfolio-2",
       "description": "Brand photography project 2",
-      "imageUrl": "https://picsum.photos/seed/brand2/800/1000",
+      "imageUrl": "/images/portfolio-2.jpg",
       "imageHint": "vibrant lifestyle photography"
     },
     {
       "id": "portfolio-3",
       "description": "Portrait project 1",
-      "imageUrl": "https://picsum.photos/seed/port1/800/1000",
+      "imageUrl": "/images/portfolio-3.jpg",
       "imageHint": "moody portrait photography"
     },
     {
       "id": "portfolio-4",
       "description": "Portrait project 2",
-      "imageUrl": "https://picsum.photos/seed/port2/800/1000",
+      "imageUrl": "/images/portfolio-4.jpg",
       "imageHint": "corporate headshot professional"
     },
     {
       "id": "portfolio-5",
       "description": "Event coverage 1",
-      "imageUrl": "https://picsum.photos/seed/event1/800/1000",
+      "imageUrl": "/images/portfolio-5.jpg",
       "imageHint": "dynamic event coverage"
     },
     {
       "id": "portfolio-6",
       "description": "Event coverage 2",
-      "imageUrl": "https://picsum.photos/seed/event2/800/1000",
+      "imageUrl": "/images/portfolio-6.jpg",
       "imageHint": "luxury event photography"
     }
   ]

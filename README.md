@@ -1,8 +1,18 @@
+
 # Aman Malhotra Photography - Premium Visual Identity
 
 This is a high-end photography portfolio built with Next.js, Tailwind CSS, and Framer Motion.
 
-## How to push to GitHub
+## 📸 Using Your Own Photos
+
+To use your own local photos in this project:
+
+1. **Create an images folder:** Create a directory named `public/images/`.
+2. **Add your files:** Place your `.jpg` or `.png` files inside that folder.
+3. **Update the data:** Open `src/app/lib/placeholder-images.json` and update the `imageUrl` fields to match your filenames (e.g., `"/images/your-photo.jpg"`).
+4. **Restart Dev Server:** If the images don't appear immediately, restart your development server.
+
+## 🚀 How to push to GitHub
 
 To push this project to your own GitHub repository, follow these steps in your terminal:
 
@@ -42,10 +52,3 @@ To push this project to your own GitHub repository, follow these steps in your t
 - **Components:** [Shadcn UI](https://ui.shadcn.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **AI Integration:** [Genkit](https://firebase.google.com/docs/genkit)
-
-## Project Structure
-
-- `src/app`: Next.js App Router pages and layouts.
-- `src/components`: Reusable UI components.
-- `src/ai`: Genkit flows for AI-powered features.
-- `src/firebase`: Firebase configuration and hooks.
