@@ -7,7 +7,7 @@ This is a high-end photography portfolio built with Next.js, Tailwind CSS, and F
 
 To use your own local photos in this project:
 
-1. **Create an images folder:** Create a directory named `public/images/`.
+1. **Create an images folder:** Create a directory named `public/images/` at the root of your project.
 2. **Add your files:** Place your `.jpg` or `.png` files inside that folder.
 3. **Update the data:** Open `src/app/lib/placeholder-images.json` and update the `imageUrl` fields to match your filenames (e.g., `"/images/your-photo.jpg"`).
 4. **Restart Dev Server:** If the images don't appear immediately, restart your development server.
