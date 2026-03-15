@@ -22,7 +22,7 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center w-full">
         <div className="z-10 space-y-8 text-center lg:text-left animate-fade-up">
           <div className="space-y-4">
-            <h1 className="font-headline text-[clamp(3rem,8vw,5rem)] font-medium leading-[1.05] tracking-tight">
+            <h1 className="font-headline text-[clamp(3.5rem,8vw,5rem)] font-medium leading-[1.05] tracking-tight">
               Elevate Your <br />
               Visual <span className="text-primary italic">Identity</span>.
             </h1>
@@ -49,12 +49,11 @@ export function Hero() {
           <div className="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10"></div>
           <div className="relative w-full h-full overflow-hidden rounded-[2px] border border-white/5 shadow-2xl bg-muted">
             <Image
-              src="/images/p.png"
+              src="/p.png"
               alt="Professional Brand Photography"
               fill
               className="object-cover transition-transform duration-1000 hover:scale-105"
               priority
-              data-ai-hint="professional photography"
             />
           </div>
         </div>

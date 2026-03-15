@@ -6,14 +6,15 @@ export function About() {
   return (
     <section id="about" className="py-32 bg-card max-w-none">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center max-w-[1400px]">
+        
         <div className="relative aspect-[3/4] w-full max-w-lg mx-auto lg:mx-0">
           <div className="absolute inset-0 border border-primary/20 -translate-x-6 translate-y-6 -z-10"></div>
+
           <Image
-            src="/images/p.png"
+            src="/p.png"
             alt="Aman Malhotra"
             fill
             className="object-cover shadow-2xl rounded-[4px]"
-            data-ai-hint="professional photographer portrait"
           />
         </div>
 
@@ -24,7 +25,7 @@ export function About() {
             </h2>
             <div className="w-20 h-px bg-primary"></div>
           </div>
-          
+
           <div className="space-y-6 text-muted-foreground text-[1.1rem] leading-relaxed font-light">
             <p>
               Your brand is more than just a logo; it's a feeling, a promise, and an experience. 
@@ -52,6 +53,7 @@ export function About() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
