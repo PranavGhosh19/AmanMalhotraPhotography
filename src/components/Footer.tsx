@@ -63,7 +63,7 @@ export function Footer() {
               </a>
             </div>
             <p className="text-xs text-muted-foreground tracking-widest pt-2">
-              aman@example.com <br />
+              ammanmalhotraaa@gmail.com <br />
               +91 99103 33813
             </p>
           </div>
