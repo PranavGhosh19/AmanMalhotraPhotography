@@ -26,12 +26,12 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-32 items-center w-full">
         <div className="z-10 space-y-8 text-center lg:text-left animate-fade-up">
           <div className="space-y-4">
-            <h1 className="font-headline text-[clamp(3rem,8vw,5.5rem)] font-medium leading-[1.1] tracking-tight">
+            <h1 className="font-headline text-[clamp(2.5rem,7vw,4.8rem)] font-medium leading-[1.1] tracking-tight">
               Elevate Your <br />
               Visual <span className="text-primary italic">Identity</span>.
             </h1>
           </div>
-          <p className="text-muted-foreground text-[1.2rem] max-w-xl mx-auto lg:mx-0 font-light leading-relaxed opacity-0 animate-fade-up delay-100 [animation-fill-mode:forwards]">
+          <p className="text-muted-foreground text-[1.1rem] md:text-[1.2rem] max-w-xl mx-auto lg:mx-0 font-light leading-relaxed opacity-0 animate-fade-up delay-100 [animation-fill-mode:forwards]">
             Crafting compelling imagery that captures the essence of your brand and
             connects with your audience through cinematic storytelling.
           </p>
